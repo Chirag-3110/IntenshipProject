@@ -10,6 +10,11 @@
       "StackName": "amplify-reactlambdagraphql-staging-161909",
       "StackId": "arn:aws:cloudformation:us-east-1:437749481831:stack/amplify-reactlambdagraphql-staging-161909/68634380-dc46-11ec-bf01-0ad8c37ff74f",
       "AmplifyAppId": "d32apowz57p8v6"
+    },
+    "categories": {
+      "auth": {
+        "reactlambdagraphqlfeeb5e9e": {}
+      }
     }
   }
 }
