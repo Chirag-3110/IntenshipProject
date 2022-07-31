@@ -1,102 +1,96 @@
-
-import { StyleSheet ,Dimensions } from "react-native";
+import { StyleSheet,Dimensions } from "react-native";
 const windowWidth=Dimensions.get('window').width;
 const windowHeight=Dimensions.get('window').height;
-const styles=StyleSheet.create({
-    container:{
-      flex:1,
-      backgroundColor:"#151515",
-      alignItems: 'flex-start',
-      justifyContent:'flex-start'
+const textColor="black"
+const Style=StyleSheet.create({
+    Container:{
+        flex:1,
+        alignItems:"center",
+        justifyContent:"center",
+        backgroundColor:"#E7E7E7"
     },
-    courseTitle:{
+    questionContainer:{
+        backgroundColor:"white",
+        width:windowWidth-30,
+        height:2*(windowHeight/3),
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 4,
+        },
+        shadowOpacity: 0.32,
+        shadowRadius: 5.46,
+        elevation: 9,
+        justifyContent:"space-between",
+        padding:10,
+        borderWidth:1,
+        borderRadius:10,
+        borderColor:'#C7C7C7'
+    },
+    checkBox:{
+        width:25,
+        height:25,
+        borderRadius:25/2,
+        borderWidth:3,
+        borderColor:"#6E7175",
+        backgroundColor:"#2F80F6"
+    },
+    checkBoxContainer:{
+        // justifyContent:"center",
+        alignItems:"center",
+        flexDirection:"row",
+        marginTop:20,
+    },
+    texts:{
+        fontWeight: 'bold',
+        color:textColor,
         fontSize:20,
-        color:"white",
-        fontWeight:'bold',
-        marginTop:20
+        padding:10
     },
-    animatedCard:{
-        flexGrow:1,
-        backgroundColor:'#0D0D0D',
-        position:'absolute',
-        bottom:0,
-        top:0,
-        right:0,
-        left:0,
-        paddingHorizontal:15,
-        paddingVertical:20,
+    selectedCheckBox:{
+        width:25,
+        height:25,
+        borderRadius:25/2,
+        borderWidth:3,
+        borderColor:"#2F80F6",
     },
-    listContainer:{
-        width:'50%',
-        height:'80%'
-    },
-    titleDesc:{
-        marginVertical:15
-    },
-    coursetitle:{
-        fontSize:25,
-        color:'white',
+    optionsBox:{
+        padding:20,
+    },  
+    options:{
+        color:textColor,
         fontWeight:"bold",
+        fontSize:20,
+        // marginTop:20,
+        marginLeft:10
     },
-    courseDesc:{
-        color:"white"
+    resultBox:{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        padding:10
     },
-    title:{
-        color:"white",
-        fontWeight:"bold",
-        // fontSize:20,
-    },
-    titleContainer:{
-        width:'100%',
-        backgroundColor:"transparent",
-        marginTop:40,
+    btnContainer:{
+        backgroundColor:"#2F80F6",
+        width:150,
         height:50,
         alignItems:"center",
         justifyContent:"center",
         borderRadius:5,
         borderWidth:1.5,
-        borderColor:"white"
-    },
-    createtaskContainer:{
-        flex:1,
-        alignItems:"center",
-        justifyContent:"space-between"
-    },
-    titleTask:{
-        color:"white",
-        fontSize:20,
-        fontWeight:"bold"
-    },
-    input:{
-        backgroundColor:"transparent",
-        height:50,
-        width:windowWidth-20,
-        borderRadius:5,
-        marginVertical:10,
-        borderColor:"white",
-        borderWidth:2,
-        color:'white',
-        padding:10
-    },
-    inputBoxex:{
-        width:'100%',
-        alignItems:"center"
-    },
-    btnContainer:{
-        backgroundColor:"white",
-        width:windowWidth-20,
-        height:50,
-        alignItems:"center",
-        justifyContent:"center",
-        borderRadius:5,
-        borderWidth:2,
-        borderColor:"#646866",
-        marginBottom:10
+        borderColor:"white"    
     },
     btnText:{
-        color:"black",
-        fontWeight:"bold",
-        fontSize:15
+        color:"white",
+        fontWeight:"bold"
+    },
+    results:{
+        flexDirection:"row",
+        // backgroundColor:"red"
+    },
+    bar:{
+        height:5,
+        backgroundColor:"#2F80F6",
+        borderRadius:10
     }
 })
-export default styles;
+export default Style;
